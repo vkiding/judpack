@@ -1,0 +1,14 @@
+echo "*****************************************************************************"
+echo "*                             Welcome to Jud                               *"
+echo "*                                                                           *"
+echo "*             A framework for building Mobile cross-platform UI.            *"
+echo "*                                                                           *"
+echo "*                      https://github.com/alibaba/jud                      *"
+echo "*****************************************************************************"
+
+
+    THIS_DIR=$(dirname "$0")
+    pushd "$THIS_DIR"
+    npm run serve
+    popd
+

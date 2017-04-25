@@ -1,0 +1,17 @@
+{
+  "name": "${pluginName}",
+  "version": "0.0.0",
+  "description": "Jud Plugin-${pluginName}",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Jud",
+    "Plugin",
+    "commponent",
+    "module",
+    "handle",
+    "judpack"
+  ],
+  "author": ""
+}

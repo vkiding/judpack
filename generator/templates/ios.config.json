@@ -1,0 +1,9 @@
+{
+   "AppName":"JudApp",
+   "Version":"0.1",
+   "BuildVersion":"0.1.0",
+   "AppId":"",
+   "CodeSign":"",
+   "Profile":"",
+   "JudBundle":"index.js"
+}

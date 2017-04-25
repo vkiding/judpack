@@ -1,0 +1,6 @@
+{
+  "AppName":"JudApp",
+  "AppId":"com.alibaba.jud",
+  "SplashText":"Hello\nJud",
+  "JudBundle":"index.js"
+}

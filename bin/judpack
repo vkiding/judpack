@@ -1,0 +1,46 @@
+#!/usr/bin/env node
+
+const program = require('commander')
+const chalk = require('chalk')
+const market = require('../src/publish/market');
+const cli = require('../src/cli')
+program
+  .version(require('../package').version)
+  .usage('<command> [options]')
+  // .command('init [name]', 'initialize a standard jud project')
+  .command('create [name]', 'initialize a standard jud project')
+  .command('platform [command]', 'command for add or remove a  platform project')
+  .command('run [platform]', 'run jud app on the specific platform')
+  .command('build [platform]', 'build jud app generator package(apk or ipa)')
+  .command('plugin [command]', 'command for add or create and publish jud plugins')
+  .command('judplugin [command]', 'create a project that is a manager of plugin')
+
+
+program.parse(process.argv)
+
+
+
+if (program.args.length < 1) {
+  program.help();
+  process.exit();
+}
+
+
+if(program.args.length >= 1){
+  var isSupport = false;
+  var list = ["create", "platform","run", "build", "plugin", "judplugin"]
+  for(var i =0;i<list.length;i++){
+    if(program.args[0] == list[i]){
+      isSupport = true;
+      break;
+    }
+  }
+  if(!isSupport){
+    console.log("  error: unknown command '"+ program.args[0]+ "'")
+    process.exit();
+  }
+
+}
+
+
+
