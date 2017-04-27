@@ -22,11 +22,11 @@
     "eslint": "^3.5.0",
     "serve": "^1.4.0",
     "webpack": "^1.13.2",
-    "jud-loader": "^0.3.3"
+    "jud-loader": "latest"
   },
   "dependencies": {
-    "jud-html5": "^0.3.2",
-    "jud-components":"*"
+    "jud-html5": "latest",
+    "jud-components":"latest"
   },
   "optionalDependencies":{
     "ios-deploy": "^1.9.0"
